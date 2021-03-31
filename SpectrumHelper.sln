@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpectrumHelper", "SpectrumHelper\SpectrumHelper.csproj", "{A32D86B8-357B-47A2-B79B-5F6C7B90B942}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpectrumHelper", "SpectrumHelper\SpectrumHelper.csproj", "{A32D86B8-357B-47A2-B79B-5F6C7B90B942}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpectrumHelper.DAL", "SpectrumHelper.DAL\SpectrumHelper.DAL.csproj", "{34E6A080-EC98-4648-9CE1-58BF91C664CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpectrumHelper.BLL", "SpectrumHelper.BLL\SpectrumHelper.BLL.csproj", "{1BC30F34-9005-41BE-9DC0-900FB46E4389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpectrumHelper.Core", "SpectrumHelper.Core\SpectrumHelper.Core.csproj", "{CA33AE97-3BF7-4243-88C8-CC9006D473CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{A32D86B8-357B-47A2-B79B-5F6C7B90B942}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A32D86B8-357B-47A2-B79B-5F6C7B90B942}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A32D86B8-357B-47A2-B79B-5F6C7B90B942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34E6A080-EC98-4648-9CE1-58BF91C664CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E6A080-EC98-4648-9CE1-58BF91C664CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E6A080-EC98-4648-9CE1-58BF91C664CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E6A080-EC98-4648-9CE1-58BF91C664CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BC30F34-9005-41BE-9DC0-900FB46E4389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC30F34-9005-41BE-9DC0-900FB46E4389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC30F34-9005-41BE-9DC0-900FB46E4389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC30F34-9005-41BE-9DC0-900FB46E4389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA33AE97-3BF7-4243-88C8-CC9006D473CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA33AE97-3BF7-4243-88C8-CC9006D473CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA33AE97-3BF7-4243-88C8-CC9006D473CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA33AE97-3BF7-4243-88C8-CC9006D473CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
