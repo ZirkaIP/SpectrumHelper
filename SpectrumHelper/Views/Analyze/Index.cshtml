@@ -1,0 +1,23 @@
+﻿@model SpectrumHelper.ViewModels.IncomingParameters
+
+
+@{
+	ViewData["Title"] = "Ввод параметров";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Введите нижнюю и верхнюю частоты для анализа спектра</p>
+
+<div class="row">
+	<div class="col-md-5">
+		<label asp-for="LowerFrequency"></label>
+		<input asp-for="LowerFrequency" class="form-control">
+		<span asp-validation-for="LowerFrequency" class="alert-danger"></span>
+	</div>
+	<div class="col-md-5">
+		<label asp-for="UpperFrequency"></label>
+		<input asp-for="UpperFrequency" class="form-control"/>
+		<span asp-validation-for="UpperFrequency" class="alert-danger"></span>
+	</div>
+</div>	
+
