@@ -15,9 +15,10 @@ namespace SpectrumHelper.Controllers
 			return View();
 		}
 
-		public IActionResult SendToAnalyze(IncomingParameters parameterss)
+		[HttpPost]
+		public IActionResult Index(IncomingParameters incomingParameters)
 		{
-			return View(Index());
+		 return View( );
 		}
 	}
 }

@@ -8,16 +8,20 @@
 
 <p>Введите нижнюю и верхнюю частоты для анализа спектра</p>
 
-<div class="row">
-	<div class="col-md-5">
-		<label asp-for="LowerFrequency"></label>
-		<input asp-for="LowerFrequency" class="form-control">
-		<span asp-validation-for="LowerFrequency" class="alert-danger"></span>
+<form asp-action="Index" method="post" class="form-group">
+	<div class="row">
+		<div class="col-md-5">
+			<label asp-for="LowerFrequency"></label>
+			<input asp-for="LowerFrequency" class="form-control">
+			<span asp-validation-for="LowerFrequency" class="alert-danger"></span>
+		</div>
+		<div class="col-md-5">
+			<label asp-for="UpperFrequency"></label>
+			<input asp-for="UpperFrequency" class="form-control" />
+			<span asp-validation-for="UpperFrequency" class="alert-danger"></span>
+		</div>
+		<div>
+			<button type="submit" class="btn-primary" style="margin-top: 35px">Подтвердить</button>
+		</div>
 	</div>
-	<div class="col-md-5">
-		<label asp-for="UpperFrequency"></label>
-		<input asp-for="UpperFrequency" class="form-control"/>
-		<span asp-validation-for="UpperFrequency" class="alert-danger"></span>
-	</div>
-</div>	
-
+</form>
