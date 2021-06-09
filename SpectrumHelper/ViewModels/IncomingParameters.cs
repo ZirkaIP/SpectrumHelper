@@ -15,5 +15,8 @@ namespace SpectrumHelper.ViewModels
 		[Display (Name = "Верхняя частота")]
 		[Required(ErrorMessage = "Поле не может быть пустым")]
 		public decimal UpperFrequency { get; set; }
+
+		[Display(Name = "Шаг")]
+		public decimal step { get; set; }
 	}
 }

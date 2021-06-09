@@ -3,7 +3,15 @@
 }
 
 <div class="text-center">
-	<h1 class="display-4">Добро пожаловать в Spectrum Helper</h1>
-	<p></p>
-
+	<h1 class="display-4">Вас приветствует Spectrum Helper</h1>
+	<p class="description" style="font-size: 18px">
+		Данный программный продукт является отличным дополнением к анализатору спектра. Основной задачей данного приложения является <br>
+		классификация сигналов в спектре сигнала реального времени. В основе приложения лежит свёрточная нейронная сеть, <br> работающая на алгортмах глубокого обучения
+	</p>
+	<div class="home-image"><img src="~/statics/maxresdefault.jpg" /></div>
+	<div>
+	<form method="post" asp-page="/Home/Index">
+		<input  class="btn btn-primary" style="margin-top: 600px; font-size: 22px" type="submit" value="Начать работу" asp-page-handler="Redirect1" />
+	</form>
+		</div>
 </div>

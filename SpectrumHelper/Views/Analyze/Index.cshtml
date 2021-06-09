@@ -6,22 +6,49 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Введите нижнюю и верхнюю частоты для анализа спектра</p>
+<p>Введите параметры для дальнейшей работы</p>
 
 <form asp-action="Index" method="post" class="form-group">
 	<div class="row">
-		<div class="col-md-5">
+
+		<div class="col-md-6">
+			<button type="button" class=" btn btn-warning" style="margin: 15px; margin-left: 5px">Подключиться к анализатору спектра</button>
+		</div>
+		<br />
+		<div class="col-md-6">
+			<span style=" color: green; font-size: 20px">
+				<br />
+				Соединение установлено
+			</span>
+		</div>
+
+		<div style="margin-top: 30px; margin-bottom: 30px" class="col-md-4">
 			<label asp-for="LowerFrequency"></label>
 			<input asp-for="LowerFrequency" class="form-control">
 			<span asp-validation-for="LowerFrequency" class="alert-danger"></span>
 		</div>
-		<div class="col-md-5">
+		<div style="margin-top: 30px; margin-bottom: 30px" class="col-md-4">
 			<label asp-for="UpperFrequency"></label>
 			<input asp-for="UpperFrequency" class="form-control" />
 			<span asp-validation-for="UpperFrequency" class="alert-danger"></span>
 		</div>
-		<div>
-			<button type="submit" class="btn-primary" style="margin-top: 35px">Подтвердить</button>
+		<div style="margin-top: 30px; margin-bottom: 30px" class="col-md-4">
+			<label asp-for="step"></label>
+			<input asp-for="step" class="form-control" />
+			<span asp-validation-for="step" class="alert-danger"></span>
 		</div>
+		<div>
+			<button style="margin: 25px" type="submit" class=" btn btn-primary" style="margin-top: 35px">Подтвердить ввод</button>
+		</div>
+		
 	</div>
+
 </form>
+<div style="font-size: 21px">
+	<span>Инструкция:</span>
+	<ol>
+		<li>В поля "Верхняя частота" и "Нижняя частота" введите частоты, задающие диапазон измерения</li>
+		<li>Поле "Шаг" предназначено для ввода интервала и не является обязательным. </li>
+		<li>Нажмите кнопку "Ввести параметры" и дождитесь переадрессации на страницу с результатами </li>
+	</ol>
+</div>
